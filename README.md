@@ -2,7 +2,7 @@
 
 This project demonstrates how to send IEEE 802.15.4 packets without using the IP stack in Zephyr. Most of the code is based on Zephyrs `tests/net/ieee802154/l2` raw packet test. This functionality was added in 3.2.0 so older versions cannot use this apprach but rather must reimplement the L2 stack themselves.
 
-The developer is still forced to define their 802.15.4 packets on their own, though. There's probably a way around this but I haven't dug deep enough to find it yet. If you get to it before me please submit a PR.
+The added functionality allows you to use the DGRAM message type to send "plain" 802.15.4 messages. You can also take complete manual control of the sent data by sending the RAW type, the L2 test contians code for this as well.
 
 ## Compatability
 
